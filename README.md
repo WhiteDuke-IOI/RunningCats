@@ -1,2 +1,2 @@
 # RunningCats
-## https://whiteduke-ioi.guthub.io/RunningCats/
+## https://whiteduke-ioi.github.io/RunningCats/
