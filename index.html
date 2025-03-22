@@ -28,6 +28,8 @@
         const cats = [];
         const screenWidth = window.innerWidth;
         const screenHeight = window.innerHeight;
+		
+		console.log("screenWidth: ", screenWidth, ", screenHeight: ", screenHeight)
         
         for (let i = 0; i < numCats; i++) {
             let cat = document.createElement("img");
@@ -49,10 +51,10 @@
                 left += cat.speedX;
                 top += cat.speedY;
                 
-                if (left > screenWidth || left < 0) {
+                if (left + 100 > screenWidth || left < 0) {
                     cat.speedX *= -1;
                 }
-                if (top > screenHeight || top < 0) {
+                if (top + 75 > screenHeight || top < 0) {
                     cat.speedY *= -1;
                 }
                 
