@@ -27,10 +27,16 @@
 		<h1>Happy Birthday</h1>
 	</div>
 	<div>
-		<audio controls="controls" loop="loop" autoplay="autoplay">
+		<audio id="audio" controls="controls" loop="loop" autoplay="autoplay">
 			<source src="./media/soul.mp3" type="audio/mp3">
 		</audio>
 	</div>
+	<script>
+		window.addEventListener('click', function (event) {
+			var audio = document.getElementById("audio");
+			audio.play();
+		});
+	</script>
     <script>
         const numCats = 15;
         const cats = [];
